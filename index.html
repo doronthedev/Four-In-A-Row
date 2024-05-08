@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="img\gameBoard.png" />
+    <script src="indexGame.js" defer></script>
+    <title>Four in a Row</title>
+  </head>
+  <body>
+    <div class="information">
+      <h1>Four in a Row</h1>
+      <h2>
+        <span class="userTurnP1">It's</span> <span class="userTurn">Red</span>
+        <span class="userTurnP2">turn</span>
+      </h2>
+    </div>
+    <div class="container">
+      <script>
+        const container = document.querySelector('.container');
+        for (let i = 0; i < 42; i++) {
+          const box = document.createElement('div');
+          box.classList.add('boxes');
+          container.appendChild(box);
+        }
+      </script>
+    </div>
+    <button class="vsComputer choiceBtn">Human Vs Computer</button>
+    <button class="vsHuman choiceBtn">Human Vs Human</button>
+    <button class="reset choiceBtn">Reset Game</button>
+  </body>
+</html>
